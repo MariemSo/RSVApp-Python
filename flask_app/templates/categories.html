@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"/>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous" ></script>
+    <link rel="stylesheet" href="../static/mainUser.css" />
+    <title>Main Page</title>
+  </head>
+  <body>
+    <!--------------------NavBar------------------ -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <!-- rightNav -->
+        <div>
+            <a class="navbar-brand" href="#">
+                <img src="/flask_app/static/assets/icon_logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                Blsati
+              </a>
+        </div>
+
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-outline-success" type="submit"> Search </button>
+        </form>
+        <!-- leftNav -->
+        <button class="logButton">Logout</button>
+    </div>
+    </nav>  
+
+    <!-- Categories -->
+
+      <div class="container">
+        <div class="card-row">
+          <div id="beauty"class="card">
+            Beauty
+          </div>
+          <div class="card">
+            Health
+          </div>
+          <div class="card">
+            Entertainment
+          </div>
+        </div>
+        <div class="card-row">
+          <div class="card">
+            Food
+          </div>
+          <div class="card">
+            Pets
+          </div>
+          <div class="card">
+            Others
+          </div>
+        </div>
+      </div>
+  </body>
+</html>
