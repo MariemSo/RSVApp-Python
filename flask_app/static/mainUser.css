@@ -1,0 +1,87 @@
+.logButton{
+    width: 95.02px;
+    height: 40px;
+    background: #04395E;
+    box-shadow: 0px 4px 4px;
+    border-radius: 49px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #FFFFFF;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+.card {
+    box-sizing: border-box;
+    width: 190px;
+    height: 254px;
+    border: 1px solid white;
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(6px);
+    border-radius: 17px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s;
+    display: flex;
+    flex-basis: 30%;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    font-weight: bolder;
+    color: black;
+    width: calc(33.33% - 10px);
+    margin-bottom: 10px;
+  }
+  .card-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .card:hover {
+    border: 1px solid black;
+    transform: scale(1.05);
+  }
+  
+  .card:active {
+    transform: scale(0.95) rotateZ(1.7deg);
+  }
+
+  .card-row:last-child .card {
+    margin-bottom: 0; 
+  }
+
+#beauty{
+    background-position: center;
+        background-size: cover;
+    background: url(./assets/wellness1.jpg) no-repeat;
+}
+
+.appointmentButtons {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .appointmentButtons button {
+    background-color: #04AA6D; /* Green background */
+    border: 1px solid green; /* Green border */
+    color: white; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+  }
+  
+  .appointmentButtons .display-area {
+    background-color: #04AA6D; /* Green background */
+    border: 1px solid green; /* Green border */
+    color: white; /* White text */
+    padding: 10px 24px; /* Some padding */
+  }
