@@ -72,16 +72,16 @@
   }
   
   .appointmentButtons button {
-    background-color: #04AA6D; /* Green background */
-    border: 1px solid green; /* Green border */
+    background-color: #7099A2; /* Green background */
+    border: 1px solid #a6c9d0; /* Green border */
     color: white; /* White text */
     padding: 10px 24px; /* Some padding */
     cursor: pointer; /* Pointer/hand icon */
   }
   
   .appointmentButtons .display-area {
-    background-color: #04AA6D; /* Green background */
-    border: 1px solid green; /* Green border */
+    background-color: #D5896F; /* Green background */
+    border: 1px solid #d5a393; /* Green border */
     color: white; /* White text */
     padding: 10px 24px; /* Some padding */
   }

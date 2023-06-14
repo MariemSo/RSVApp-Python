@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{business_Name}}</title>
+</head>
+<body>
+    <!-------- navbar ---------->
+    <nav>
+
+    </nav>
+    <!-- -------Photos-------- -->
+    <div>
+        <img src="" alt="">
+        <div>
+            <img src="" alt="">
+        </div>
+    </div>
+    <!------ description /info ----->
+    <div>
+        <p>{{Description}}</p>
+
+        <ol>
+            <li>
+                <img src="" alt="location">{{name}}
+            </li>
+
+            <li>
+                <img src="" alt="phone Number">{{phoneNumber}}
+            </li>
+
+            <li>
+                <img src="" alt="Email">{{Email}}
+            </li>
+        </ol>
+
+        <button>Get an Appointment</button>
+    </div>
+    <!-- --------------services----------- -->
+    <div>
+        <!-- {{% for %}} -->
+        <p>{{service}}</p> <p>price</p>
+        <!-- {{%endfor%}} -->
+    </div>
+    <!-----------------Reviews------------- -->
+    <div>
+        <!-- {{%for%}} -->
+        <div>
+            <div>
+                <p>{{full_Name}}</p>
+                <p>{{last_time_appointment}}</p>
+            </div>
+            <p>{{user_review}}</p>
+        </div> 
+        <!-- {{%endfor%}} -->
+    </div>
+    <!-- ----------------links ------------->
+    <div>
+        <a href="#">{{link}}</a>
+    </div>
+</body>
+</html>
