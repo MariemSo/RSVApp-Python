@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"/>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous" ></script>
     <link rel="stylesheet" type="text/css" href="../static/style.css">
@@ -49,7 +50,8 @@
             </li>
             </ul>
         </div>
-        <button class="logButton">Login</button>
+        <button class="logButton">User Login</button>
+        <button class="logButton">Business Login</button>
     </div>
   </nav>
 <!-- -----------------Slides------------------ -->
@@ -110,60 +112,102 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-  <!-- ----------------Steps------------------ -->
-  <div class="container d-flex justify-content-evenly my-2 ">
-    <div>
-      <div>
-        <img src="#" alt="Icon Step 1" />
+<br>
+
+<div class="">
+  <div class="container">
+    <!--first section-->
+    <div class="row align-items-center how-it-works d-flex">
+      <div class="col-2 text-center bottom d-inline-flex justify-content-center align-items-center">
+        <div class="circle font-weight-bold">1</div>
       </div>
-      <div>
-        <h2>Step 1</h2>
-        <p>Select a service and a provider</p>
-      </div>
-    </div>
-    <div>
-      <div>
-        <img src="#" alt="Icon Step 2" />
-      </div>
-      <div>
-        <h2>Step 2</h2>
-        <p>Select a date and a time</p>
+      <div class="col-6">
+        <h5>Select a service and a provider</h5>
+        <p>you got reviews , you got all the infos , <br>
+          and true image of the spot </p>
       </div>
     </div>
-    <div>
-      <div>
-        <img src="#" alt="Icon Step 3" />
+    <!--path between 1-2-->
+    <div class="row timeline">
+      <div class="col-2">
+        <div class="corner top-right"></div>
       </div>
-      <div>
-        <h2>Step 3</h2>
-        <p>Book it</p>
+      <div class="col-8">
+        <hr/>
+      </div>
+      <div class="col-2">
+        <div class="corner left-bottom"></div>
+      </div>
+    </div>
+    <!--second section-->
+    <div class="row align-items-center justify-content-end how-it-works d-flex">
+      <div class="col-6 text-right">
+        <h5>Select a Date and a Time</h5>
+        <p>It has never been easier to get an appointment , <br>no calls , no queues, only a safe spot</p>
+      </div>
+      <div class="col-2 text-center full d-inline-flex justify-content-center align-items-center">
+        <div class="circle font-weight-bold">2</div>
+      </div>
+    </div>
+    <!--path between 2-3-->
+    <div class="row timeline">
+      <div class="col-2">
+        <div class="corner right-bottom"></div>
+      </div>
+      <div class="col-8">
+        <hr/>
+      </div>
+      <div class="col-2">
+        <div class="corner top-left"></div>
+      </div>
+    </div>
+    <!--third section-->
+    <div class="row align-items-center how-it-works d-flex">
+      <div class="col-2 text-center top d-inline-flex justify-content-center align-items-center">
+        <div class="circle font-weight-bold">3</div>
+      </div>
+      <div class="col-6">
+        <h5>Book it</h5>
+        <p>get yourself a spot,Get your confirmation and have it added to your Calander</p>
       </div>
     </div>
   </div>
-
-  <div class="container d-flex justify-content-evenly my-2 ">
-      <div class="d-flex">
-          <img src="#" alt="Icon Step 1" />
-          <div>
-          <h2>Step 1</h2>
-          <p>Select a service and a provider</p>
-      </div>
-      </div>
-      <div class="d-flex">
-          <img src="#" alt="Icon Step 1" />
-          <div>
-          <h2>Step 2</h2>
-          <p>Select a service and a provider</p>
-      </div>
-      </div>
-      <div class="d-flex">
-          <img src="#" alt="Icon Step 1" />
-          <div>
-          <h2>Step 3</h2>
-          <p>Select a service and a provider</p>
-      </div>
-      </div>
+</div>
+  <!-- ---------------Features-------------- -->
+  <div class="features-clean">
+    <div class="container">
+        <div class="intro">
+            <h2 class="text-center">Features</h2>
+            <p class="text-center">Take control of your time, one appointment at a time </p>
+        </div>
+        <div class="row features">
+            <div class="col-sm-6 col-lg-4 item"><i class="fa fa-map-marker icon"></i>
+                <h3 class="name">Works everywhere</h3>
+                <p class="description">Empowering you with convenience and flexibility—our site brings appointments to your fingertips, regardless of location.</p>
+            </div>
+            <div class="col-sm-6 col-lg-4 item"><i class="fa fa-clock-o icon"></i>
+                <h3 class="name">Stress Free</h3>
+                <p class="description">Experience the true essence of time liberation. Our comprehensive appointment solutions grant you the privilege to take charge of your schedule, providing unrivaled accessibility, day or night, 24/7.</p>
+            </div>
+            <div class="col-sm-6 col-lg-4 item"><i class="fa fa-list-alt icon"></i>
+                <h3 class="name">Don't be decieved</h3>
+                <p class="description">We understand the importance of user feedback. Benefit from our app's integrated reviews to enhance your experience.</p>
+            </div>
+            <div class="col-sm-6 col-lg-4 item"><i class="fa fa-leaf icon"></i>
+                <h3 class="name">Organised</h3>
+                <p class="description">Leave the complexities of scheduling behind and embrace a seamless, user-friendly solution tailored to your needs.</p>
+            </div>
+            <div class="col-sm-6 col-lg-4 item"><i class="fa fa-plane icon"></i>
+                <h3 class="name">Fast</h3>
+                <p class="description">No more wasting time in long queues or driving to find no available spots. We've got you covered</p>
+            </div>
+            <div class="col-sm-6 col-lg-4 item"><i class="fa fa-phone icon"></i>
+                <h3 class="name">Mobile-first</h3>
+                <p class="description">Say goodbye to the frustration of calling and waiting. With our app, booking appointments is effortless and convenient.</p>
+            </div>
+        </div>
     </div>
+    <!-- --------------------- -->
     <div class="card w text-white " >
       <img src="../static/assets/index_2.jpg" style="height: 200px;" class="card-img " alt="...">
       <div class="card-img-overlay">
@@ -203,12 +247,10 @@
         <p class="card-text">Last updated 3 mins ago</p>
       </div>
     </div>
-  <div>
+
 </body>
 <footer>
         
 </footer>
 
-</html>
-</body>
 </html>
