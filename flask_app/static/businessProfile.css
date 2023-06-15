@@ -1,0 +1,139 @@
+.logButton{
+    width: 95.02px;
+    height: 40px;
+    background: #04395E;
+    box-shadow: 0px 4px 4px;
+    border-radius: 49px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+.container {
+    margin-top: 30px;
+}
+
+/* cover images section start */
+.businesses-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.businesses-title {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+    color: #04395E;
+    margin-bottom: 20px;
+}
+
+.businesses-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    width: 60%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.businesses-botImages{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    height: 170;
+}
+
+.img-fluid {
+    max-height: 100%;
+}
+
+.businesses-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 95.02px;
+    height: 40px;
+    background: #04395E;
+    border-radius: 49px;
+    border: none;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+.businesses-btn:hover {
+    background-color: #042b47;
+}
+/* cover images section end */
+
+/* description section start */
+.fieldset{ 
+    border: 1px solid #04395E;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 5px 20px 20px 20px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.legend{
+    float: none;
+    width: auto;
+    margin: 0 10px;
+    padding: 0 10px;
+}
+
+.description-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.description-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.description-content p {
+    flex: 2;
+}
+
+.description-btn {
+    position: absolute;
+    right: 50px;
+}
+/* description section end */
+
+/* services section start */
+.services-list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.social-icons{
+    display: flex;
+    justify-content: space-evenly;
+  
+  }
+  .icons{
+    font-size: xx-large;
+  }

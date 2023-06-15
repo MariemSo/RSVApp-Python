@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Business Profile</title> <!--! possible update jinja -->
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- custom CSS file -->
+    <link rel="stylesheet" href="../static/businessProfile.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <!-- rightNav -->
+        <div>
+          <a class="navbar-brand" href="#">
+            <img
+              src="/flask_app/static/assets/icon_logo.png"
+              width="30"
+              height="30"
+              class="d-inline-block align-top"
+              alt=""
+            />
+            Blasti
+          </a>
+        </div>
+
+        <form class="d-flex">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+        <!-- leftNav -->
+        <button class="logButton">Logout</button>
+      </div>
+    </nav>
+
+    <div class="container">
+      <!-- cover images section start -->
+      <div class="businesses-section">
+        <!-- title placeholder -->
+        <h1 class="businesses-title">Businesses</h1>       <!-- !jinja Business Name -->
+        <!-- business images placeholder -->
+        <div class="businesses-images">
+          <div class="businesses-mainImage">
+            <img
+              src="/flask_app/static/assets/main_resto.jpg"
+              class="img-fluid"
+              alt="businesses-mainImage"
+            />
+          </div>
+          <div class="businesses-botImages">
+            <div class="businesses-botImage">
+              <img
+                src="/flask_app/static/assets/resto1.jpg"
+                class="img-fluid"
+                alt="businesses-botImage"
+              />
+            </div>
+            <div class="businesses-botImage">
+              <img
+                src="/flask_app/static/assets/resto2.jpg"
+                class="img-fluid"
+                alt="businesses-botImage"
+              />
+            </div>
+            <div class="businesses-botImage">
+              <img
+                src="/flask_app/static/assets/resto3.jpg"
+                class="img-fluid"
+                alt="businesses-botImage"
+              />
+            </div>
+            <div class="businesses-botImage">
+              <img
+                src="/flask_app/static/assets/resto4.jpg"
+                class="img-fluid"
+                alt="businesses-botImage"
+              />                                          <!-- !jinja image_Url -->
+            </div>
+            <div class="businesses-botImage">
+              <img
+                src="/flask_app/static/assets/resto5.jpg"
+                class="img-fluid"
+                alt="businesses-botImage"
+              />
+            </div>
+            <div class="businesses-botImage">
+              <img
+                src="/flask_app/static/assets/resto6.jpg"
+                class="img-fluid"
+                alt="businesses-botImage"
+              />
+            </div>
+          </div>
+        </div>
+        <button class="businesses-btn">Edit</button>
+      </div>
+      <!-- cover images section end -->
+
+      <!-- description section start -->
+      <div class="description-section">
+        <fieldset class="fieldset">
+          <legend class="legend">Description</legend>
+          <div class="description-content">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+              voluptatum, quibusdam, quia, quae voluptate voluptas quod
+              consequuntur voluptatibus quos doloribus quidem. Quisquam
+              voluptatum, quibusdam, quia, quae voluptate voluptas quod
+              consequuntur voluptatibus quos doloribus quidem. Lorem ipsum dolor
+              sit amet, consectetur adipisicing elit. Iste, provident laborum!
+              Voluptatibus temporibus quas et officia id sit, nobis iste esse
+              quisquam excepturi? Rerum enim debitis provident magnam illo nam. 
+            </p>                                                                 <!-- !jinja -->
+            <div class="description-contact">
+              <fieldset class="fieldset">
+                <legend class="legend">Contact Info</legend>
+                <p><i class="fas fa-location-dot"></i> Address</p>      <!-- !jinja -->
+                <p><i class="fas fa-phone-alt"></i> Phone number</p>      <!-- !jinja -->
+                <p><i class="fas fa-envelope"></i> Email</p>      <!-- !jinja -->
+              </fieldset>
+            </div>
+          </div>
+          <button class="businesses-btn description-btn">Edit</button>
+        </fieldset>
+      </div>
+      <!-- description section end -->
+
+      <!-- services section start -->
+      <div class="services-section">
+        <fieldset class="fieldset">
+          <legend class="legend">Services</legend>
+          <div class="services-list">
+            <!-- check-box services -->       <!-- !jinja for loop -->
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="section1"
+              />
+              <label class="form-check-label" for="section1"> Section 1 </label>
+            </div>
+            <!-- ?start delete -->
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="section2"
+              />
+              <label class="form-check-label" for="section2"> Section 2 </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="section3"
+              />
+              <label class="form-check-label" for="section3"> Section 3 </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="section4"
+              />
+              <label class="form-check-label" for="section4"> Section 4 </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="section5"
+              />
+              <label class="form-check-label" for="section5"> Section 5 </label>
+            </div>
+            <!-- ?end delete -->
+          </div>
+          <button class="businesses-btn description-btn">Edit</button>
+        </fieldset>
+      </div>
+      <!-- services section end -->
+
+      <!-- reviews section start -->
+      <div class="reviews-section">
+        <fieldset class="fieldset">
+          <legend class="legend">Reviews</legend>
+
+          <div class="row text-center"> <!-- !jinja for loop -->
+            <div class="col-md-4 mb-5 mb-md-0">
+              <div class="d-flex justify-content-center mb-4">
+                <img
+                  src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp"
+                  class="rounded-circle shadow-1-strong"
+                  width="150"
+                  height="150"
+                  alt=""
+                />
+              </div>
+              <h5 class="mb-3">Maria Smantha</h5>                        <!--! update jinja -->
+              <h6 class="text-primary mb-3">Last created Appointment</h6> <!--! update jinja -->
+              <p class="px-xl-3">
+                <i class="fas fa-quote-left pe-2"></i>Lorem ipsum dolor sit
+                amet, consectetur adipisicing elit. Quod eos id officiis hic
+                tenetur quae quaerat ad velit ab hic tenetur.
+              </p>                                                               <!--! update jinja -->
+              
+            </div>
+            <!--? delete start -->
+            <div class="col-md-4 mb-5 mb-md-0">
+              <div class="d-flex justify-content-center mb-4">
+                <img
+                  src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp"
+                  class="rounded-circle shadow-1-strong"
+                  width="150"
+                  height="150"
+                  alt=""
+                />
+              </div>
+              <h5 class="mb-3">Lisa Cudrow</h5>
+              <h6 class="text-primary mb-3">last_visited</h6> 
+              <p class="px-xl-3">
+                <i class="fas fa-quote-left pe-2"></i>Ut enim ad minima veniam,
+                quis nostrum exercitationem ullam corporis suscipit laboriosam,
+                nisi ut aliquid commodi.
+              </p>
+              
+            </div>
+            <div class="col-md-4 mb-0">
+              <div class="d-flex justify-content-center mb-4">
+                <img
+                  src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).webp"
+                  class="rounded-circle shadow-1-strong"
+                  width="150"
+                  height="150"
+                  alt=""
+                />
+              </div>
+              <h5 class="mb-3">John Smith</h5>
+              <h6 class="text-primary mb-3">Marketing Specialist</h6>
+              <p class="px-xl-3">
+                <i class="fas fa-quote-left pe-2"></i>At vero eos et accusamus
+                et iusto odio dignissimos ducimus qui blanditiis praesentium
+                voluptatum deleniti atque corrupti.
+              </p>
+              
+            </div>
+            <!--? delete End -->
+          </div>
+          <button class="businesses-btn description-btn">See All</button><!--! route-->
+        </fieldset>
+      </div>
+
+      <!-- reviews section end -->
+
+      <!-- appointments section start -->
+      <div class=" w-100">
+        <fieldset class="fieldset">
+          <legend class="legend">
+           My Appointments       <!--? Add appointments-->
+          </legend>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">User Name</th>
+                <th scope="col">Sent</th>
+                <th scope="col">Actions</th>
+         
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Maria Samantha</th>
+                <td>12 Hours </td><!--? created at time -->
+                <td class="tab-action"><button type="button" class="btn btn-primary">Accept</button><button type="button" class="btn btn-danger">Decline</button></td>
+              </tr>
+              <tr>
+                <th scope="row">John Smith</th>
+                <td>1 Day </td><!--? created at time -->
+                <td class="tab-action"><button type="button" class="btn btn-primary">Accept</button><button type="button" class="btn btn-danger">Decline</button></td>
+                
+              </tr>
+              <tr>
+                <th scope="row">Lisa Cudrow</th>
+                <td>2 Hours </td><!--? created at time -->
+                <td class="tab-action "><button type="button" class="btn btn-primary">Accept</button><button type="button" class="btn btn-danger">Decline</button></td>
+              </tr>
+            </tbody>
+          </table>
+          <button class="businesses-btn description-btn">See All</button>  <!--! route-->
+        </fieldset>
+      </div>
+      <!-- appointments section end -->
+    </div>
+  </body>
+
+  <!-- MDB -->
+  <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+  ></script>
+</html>

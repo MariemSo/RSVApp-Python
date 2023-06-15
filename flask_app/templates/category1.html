@@ -3,57 +3,206 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"/>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous" ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="../static/mainUser.css" />
-    <title>Main Page</title>
+    <title>Buisnesses Lists</title>
   </head>
   <body>
-    <!--------------------NavBar------------------ -->
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-        <!-- rightNav -->
-        <div>
-            <a class="navbar-brand" href="#">
-                <img src="/flask_app/static/assets/icon_logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
-                Blsati
+      <!-- Container wrapper -->
+      <div class="container-fluid">
+        <!-- Toggle button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-mdb-toggle="collapse"
+          data-mdb-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse w-100" id="navbarSupportedContent">
+          <!-- Navbar brand -->
+          <a class="navbar-brand mt-2 mt-lg-0" href="#">
+            <img
+              src="/flask_app/static/assets/icon_logo.png"
+              width="30"
+              height="30"
+              alt="MDB Logo"
+              loading="lazy"
+            />
+            Blasti
+          </a>
+          <form class="d-flex input-group w-auto">
+            <input
+              type="search"
+              class="form-control rounded"
+              placeholder="Search"
+              aria-label="Search"
+              aria-describedby="search-addon"
+            />
+            <span class="input-group-text border-0" id="search-addon">
+              <i class="fas fa-search"></i>
+            </span>
+          </form>
+          <!-- Right links -->
+
+          <!-- Collapsible wrapper -->
+
+          <!-- Right elements -->
+          <ul class="navbar-nav justify-content-end d-flex mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-mdb-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Categories
               </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li><a class="dropdown-item" href="#">Beauty</a></li>
+                <li><a class="dropdown-item" href="#">Health</a></li>
+                <li><a class="dropdown-item" href="#">Entertainment</a></li>
+                <li><a class="dropdown-item" href="#">Pets</a></li>
+                <li><a class="dropdown-item" href="#">Food</a></li>
+                <li><a class="dropdown-item" href="#">Others</a></li>
+              </ul>
+            </li>
+          </ul>
         </div>
+        <!-- Right elements -->
 
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-          <button class="btn btn-outline-success" type="submit"> Search </button>
-        </form>
-        <!-- leftNav -->
-        <button class="logButton">Logout</button>
-    </div>
-    </nav>  
-
-    <!-- Categories -->
-
-      <div class="container">
-        <div class="card-row">
-          <div id="beauty"class="card">
-            Beauty
-          </div>
-          <div class="card">
-            Health
-          </div>
-          <div class="card">
-            Entertainment
-          </div>
-        </div>
-        <div class="card-row">
-          <div class="card">
-            Food
-          </div>
-          <div class="card">
-            Pets
-          </div>
-          <div class="card">
-            Others
+        <div class="d-flex align-items-center">
+          <!-- Avatar -->
+          <div class="dropdown">
+            <a
+              class="dropdown-toggle d-flex align-items-center hidden-arrow"
+              href="#"
+              id="navbarDropdownMenuAvatar"
+              role="button"
+              data-mdb-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img
+                src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                class="rounded-circle"
+                height="25"
+                alt="Black and White Portrait of a Man"
+                loading="lazy"
+              />
+            </a>
+            <ul
+              class="dropdown-menu dropdown-menu-end"
+              aria-labelledby="navbarDropdownMenuAvatar"
+            >
+              <li>
+                <a class="dropdown-item" href="#">My profile</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Settings</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Logout</a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
+    </nav>
+    <div class="container">
+      <div class="w-100">
+        <fieldset class="fieldset">
+          <legend class="legend">
+            Le Crab
+            <!--? Add appointments-->
+          </legend>
+          <div class="card">
+            <div class="card-body catgory1">
+              <img src="../static/assets/resto1.jpg" width="200px" />
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <div class="d-flex flex-column gap-3 mr-5">
+                <button type="button" class="btn btn-primary">
+                  Get An Appointment
+                </button>
+                <button type="button" class="btn btn-primary">View More</button>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+      <div class="w-100">
+        <fieldset class="fieldset">
+          <legend class="legend">
+            Les Gourmands
+            <!--? Add appointments-->
+          </legend>
+          <div class="card">
+            <div class="card-body catgory1">
+              <img src="../static/assets/resto4.jpg" width="200px" />
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <div class="d-flex flex-column gap-3 mr-5">
+                <button type="button" class="btn btn-primary">
+                  Get An Appointment
+                </button>
+                <button type="button" class="btn btn-primary">View More</button>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+      <div class="w-100">
+        <fieldset class="fieldset">
+          <legend class="legend">
+            SpongBob
+            <!--? Add appointments-->
+          </legend>
+          <div class="card">
+            <div class="card-body catgory1">
+              <img src="../static/assets/resto6.jpg" width="200px" />
+              <p class="card-text"></p>
+              <div class="d-flex flex-column gap-3 mr-5">
+                <button type="button" class="btn btn-primary">
+                  Get An Appointment
+                </button>
+                <button type="button" class="btn btn-primary">View More</button>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+    </div>
   </body>
 </html>

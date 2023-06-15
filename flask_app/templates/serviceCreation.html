@@ -1,57 +1,164 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous" ></script>
-    <link rel="stylesheet" href="../static/mainUser.css" />
-    <link rel="stylesheet" href="../static/service.css" />
-    <title>Connect Your Business</title>
+    <title>Sevice Creation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+        
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        select, input[type="text"], input[type="file"], input[type="time"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+        
+        .button-container {
+            text-align: center;
+        }
+        
+        .button-container button {
+            background-color: #D5896F;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        
+        .button-container button:hover {
+            background-color: #D5896F;
+        }
+        
+        .service-inputs-container input[type="text"] {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+        
+        .service-inputs-container input[type="text"]:last-child {
+            margin-bottom: 0;
+        }
+    </style>
 </head>
 <body>
-    <div class="container rounded bg-white mt-5 mb-5">
-        <div class="row">
-            <div class="col-md-3 border-right">
-                <div class="d-flex flex-column align-items-center text-center p-3 py-5"><img class="rounded-circle mt-5" width="150px" src="https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg"><span class="font-weight-bold">Edogaru</span><span class="text-black-50">edogaru@mail.com.my</span><span> </span></div>
-            </div>
-            <div class="col-md-5 border-right">
-                <div class="p-3 py-5">
-                    <div class="d-flex justify-content-between align-items-center mb-3">
-                        <h4 class="text-right">Profile Settings</h4>
-                    </div>
-                    <div class="row mt-2">
-                        <div class="col-md-6"><label class="labels">Name</label><input type="text" class="form-control" placeholder="first name" value=""></div>
-                        <div class="col-md-6"><label class="labels">Surname</label><input type="text" class="form-control" value="" placeholder="surname"></div>
-                    </div>
-                    <div class="row mt-3">
-                        <div class="col-md-12"><label class="labels">Mobile Number</label><input type="text" class="form-control" placeholder="enter phone number" value=""></div>
-                        <div class="col-md-12"><label class="labels">Address Line 1</label><input type="text" class="form-control" placeholder="enter address line 1" value=""></div>
-                        <div class="col-md-12"><label class="labels">Address Line 2</label><input type="text" class="form-control" placeholder="enter address line 2" value=""></div>
-                        <div class="col-md-12"><label class="labels">Postcode</label><input type="text" class="form-control" placeholder="enter address line 2" value=""></div>
-                        <div class="col-md-12"><label class="labels">State</label><input type="text" class="form-control" placeholder="enter address line 2" value=""></div>
-                        <div class="col-md-12"><label class="labels">Area</label><input type="text" class="form-control" placeholder="enter address line 2" value=""></div>
-                        <div class="col-md-12"><label class="labels">Email ID</label><input type="text" class="form-control" placeholder="enter email id" value=""></div>
-                        <div class="col-md-12"><label class="labels">Education</label><input type="text" class="form-control" placeholder="education" value=""></div>
-                    </div>
-                    <div class="row mt-3">
-                        <div class="col-md-6"><label class="labels">Country</label><input type="text" class="form-control" placeholder="country" value=""></div>
-                        <div class="col-md-6"><label class="labels">State/Region</label><input type="text" class="form-control" value="" placeholder="state"></div>
-                    </div>
-                    <div class="mt-5 text-center"><button class="btn btn-primary profile-button" type="button">Save Profile</button></div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="p-3 py-5">
-                    <div class="d-flex justify-content-between align-items-center experience"><span>Edit Experience</span><span class="border px-3 p-1 add-experience"><i class="fa fa-plus"></i>&nbsp;Experience</span></div><br>
-                    <div class="col-md-12"><label class="labels">Experience in Designing</label><input type="text" class="form-control" placeholder="experience" value=""></div> <br>
-                    <div class="col-md-12"><label class="labels">Additional Details</label><input type="text" class="form-control" placeholder="additional details" value=""></div>
-                </div>
-            </div>
+    <h1>Set Up Your Business</h1>
+    <form action="/setup/time_images" method="POST">
+        <div>
+            <label for="days">Select days:</label>
+            <select id="day" name="day" multiple>
+                <option value="monday">Monday</option>
+                <option value="tuesday">Tuesday</option>
+                <option value="wednesday">Wednesday</option>
+                <option value="thursday">Thursday</option>
+                <option value="friday">Friday</option>
+                <option value="saturday">Saturday</option>
+                <option value="sunday">Sunday</option>
+            </select>
         </div>
-    </div>
-    </div>
-    </div>
+        <div class="button-container">
+            <button type="button" onclick="createIntervalInputs()">Create Interval Inputs</button>
+        </div>
+        <div id="intervalInputsContainer"></div>
+        
+        <div>
+            <label for="images">Add pictures:</label>
+            <input type="file" id="images" name="images" accept="image/png, image/jpeg">
+        </div>
+
+        <div class="service-inputs-container">
+            <label for="services">Add services:</label>
+            <input type="text" placeholder="Service 1" name="service_name">
+            <input type="text" placeholder="Service 2" name="service_name">
+            <input type="text" placeholder="Service 3" name="service_name">
+        </div>
+
+        <div class="button-container">
+            <button type="button" onclick="addServiceInput()">Add Service Input</button>
+        </div>
+        
+        <div class="button-container">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+
+    <script>
+        function createIntervalInputs() {
+            var selectedDays = Array.from(document.getElementById("day").selectedOptions, option => option.value);
+            var intervalInputsContainer = document.getElementById("intervalInputsContainer");
+    
+            selectedDays.forEach(function (day) {
+                var option = document.querySelector('option[value="' + day + '"]');
+                option.disabled = true;
+    
+                var label = document.createElement("label");
+                label.textContent = day.charAt(0).toUpperCase() + day.slice(1) + ": ";
+                
+                var startHourInput = document.createElement("input");
+                startHourInput.type = "time";
+                startHourInput.name = "start_time";
+    
+                var endHourInput = document.createElement("input");
+                endHourInput.type = "time";
+                endHourInput.name = "end_time";
+    
+                intervalInputsContainer.appendChild(label);
+                intervalInputsContainer.appendChild(startHourInput);
+                intervalInputsContainer.appendChild(document.createTextNode(" to "));
+                intervalInputsContainer.appendChild(endHourInput);
+                intervalInputsContainer.appendChild(document.createElement("br"));
+            });
+        }
+    
+        var serviceInputCount = 3;
+    
+        function addServiceInput() {
+            var serviceInputsContainer = document.getElementsByClassName("service-inputs-container")[0];
+    
+            var newInput = document.createElement("input");
+            newInput.type = "text";
+            newInput.placeholder = "Service " + (serviceInputCount + 1);
+            newInput.name = "service_name";
+        
+            serviceInputsContainer.appendChild(newInput);
+            serviceInputsContainer.appendChild(document.createElement("br"));
+        
+            serviceInputCount++;
+        }
+    </script>
 </body>
 </html>

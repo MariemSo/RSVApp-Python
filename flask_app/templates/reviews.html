@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="flask_app/static/reviews.css">
+    <title>Reviews</title>
+</head>
+<body>
+    <!-------- navbar ---------->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <!-- rightNav -->
+            <div>
+                <a class="navbar-brand" href="#">
+                    <img src="/flask_app/static/assets/icon_logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                    Blasti
+                  </a>
+            </div>
+    
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+              <button class="btn btn-outline-success" type="submit"> Search </button>
+            </form>
+            <!-- leftNav -->
+            <div class="collapse navbar-collapse d-flex " id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Categories
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Beauty</a></li>
+                    <li><a class="dropdown-item" href="#">Health</a></li>
+                    <li><a class="dropdown-item" href="#">Entertainment</a></li>
+                    <li><a class="dropdown-item" href="#">Pets</a></li>
+                    <li><a class="dropdown-item" href="#">Food</a></li>
+                    <li><a class="dropdown-item" href="#">Others</a></li>
+                    </ul>
+                </li>
+                </ul>
+            </div>
+            <button class="logButton">Logout</button>
+        </div>
+    </nav>
+
+    <!-- -------------Review Cards------------ -->
+    <div class="container mt-5">
+    <div class="d-flex justify-content-around p-1">
+    <div class="card p-1" style="width: 18rem;">
+        <div class="card-body">
+            <img
+            src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp"
+            class="rounded-circle shadow-1-strong"
+            width="150"
+            height="150"
+            alt=""
+            />
+            <h5 class="card-title">User Name</h5> <!--! update jinja -->
+            <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Incidunt, iusto ipsa! Error impedit at quas consectetur asperiores beatae deserunt
+                vel repellat ipsum voluptates temporibus corporis facilis maxime adipisci, rerum et.
+            </p>                                                                    <!--! update jinja -->
+          <a href="#" class="btn btn-primary">comment</a>  <!--! route -->
+        </div>
+    </div>
+    <!--? -----Delete start----- -->
+    <div class="card p-1" style="width: 18rem;">
+        <div class="card-body">
+            <img
+            src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp"
+            class="rounded-circle shadow-1-strong"
+            width="150"
+            height="150"
+            alt=""
+            />
+            <h5 class="card-title">User Name</h5> <!--! update jinja -->
+            <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Incidunt, iusto ipsa! Error impedit at quas consectetur asperiores beatae deserunt
+                vel repellat ipsum voluptates temporibus corporis facilis maxime adipisci, rerum et.
+            </p>                                                                    <!--! update jinja -->
+          <a href="#" class="btn btn-primary">comment</a>  <!--! route -->
+        </div>
+    </div>
+    <div class="card p-1" style="width: 18rem;">
+        <div class="card-body">
+            <img
+            src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).webp"
+            class="rounded-circle shadow-1-strong"
+            width="150"
+            height="150"
+            alt=""
+            />
+            <h5 class="card-title">User Name</h5> <!--! update jinja -->
+            <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Incidunt, iusto ipsa! Error impedit at quas consectetur asperiores beatae deserunt
+                vel repellat ipsum voluptates temporibus corporis facilis maxime adipisci, rerum et.
+            </p>                                                                    <!--! update jinja -->
+          <a href="#" class="btn btn-primary">comment</a>  <!--! route -->
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>
+<!-- MDB -->
+<script
+type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.js"
+></script>

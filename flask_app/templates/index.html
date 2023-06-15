@@ -1,256 +1,343 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"/>
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous" ></script>
-    <link rel="stylesheet" type="text/css" href="../static/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" type="text/css" href="../static/style.css" />
     <title>Index</title>
-</head>
-<body>
-<!--------------------NavBar------------------ -->
-   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid ">
+  </head>
+  <body>
+    <!--------------------NavBar------------------ -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <div class="container-fluid">
         <!-- rightNav -->
         <div>
-            <a class="navbar-brand" href="#">
-                <img src="/flask_app/static/assets/icon_logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
-                Blsati
-              </a>
+          <a class="navbar-brand" href="#">
+            <img
+              src="/flask_app/static/assets/icon_logo.png"
+              width="30"
+              height="30"
+              class="d-inline-block align-top"
+              alt=""
+            />
+            Blasti
+          </a>
         </div>
 
         <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-          <button class="btn btn-outline-success" type="submit"> Search </button>
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success" type="submit">Search</button>
         </form>
         <!-- leftNav -->
-        <div class="collapse navbar-collapse d-flex " id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <div
+          class="collapse navbar-collapse d-flex"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">About Us</a>
+              <a class="nav-link" href="#">About Us</a>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
                 Categories
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="#">Beauty</a></li>
                 <li><a class="dropdown-item" href="#">Health</a></li>
                 <li><a class="dropdown-item" href="#">Entertainment</a></li>
                 <li><a class="dropdown-item" href="#">Pets</a></li>
                 <li><a class="dropdown-item" href="#">Food</a></li>
                 <li><a class="dropdown-item" href="#">Others</a></li>
-                </ul>
+              </ul>
             </li>
-            </ul>
+          </ul>
         </div>
         <button class="logButton">User Login</button>
         <button class="logButton">Business Login</button>
-    </div>
-  </nav>
-<!-- -----------------Slides------------------ -->
-  <div
-    id="carouselExampleCaptions"
-    class="carousel slides slide"
-    data-bs-ride="carousel"
-  >
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" ></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2" ></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3" ></button>
-    </div>
-    <div class="carousel-inner">
-        <!-- ----------------slide 3------------ -->
+      </div>
+    </nav>
+
+    <div id="carouselExampleControls" class="carousel slide" data-mdb-ride="carousel">
+      <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="../static/assets/Index_1.png"  class="d-block w-100"  alt="..." />
-            <div class="carousel-caption d-none d-md-block">
-                <h5>Save Time</h5>
-                <p>Take control of your time, one appointment at a time</p>
-            </div>
+          <img src="https://mdbcdn.b-cdn.net/img/new/slides/041.webp" class="d-block w-100" alt="Wild Landscape"/>
         </div>
-
-        <!-- ----------------slide 2------------ -->
         <div class="carousel-item">
-            <img src="../static/assets/Index_1.png" class="d-block w-100" alt="..."/>
-            <div class="carousel-caption d-none d-md-block">
-                <h5>No More Queues</h5>
-                <p>Escape the frustration of waiting</p>
-            </div>
+          <img src="https://mdbcdn.b-cdn.net/img/new/slides/042.webp" class="d-block w-100" alt="Camera"/>
         </div>
-      <!-- ----------------slide 3------------ -->
         <div class="carousel-item">
-            <img src="../static/assets/Index_1.png" class="d-block w-100" alt="..." />
-            <div class="carousel-caption d-none d-md-block">
-                <h5>Skip the queues and wasted drives</h5>
-                <p>Some representative placeholder content for the third slide.</p>
-            </div>
+          <img src="https://mdbcdn.b-cdn.net/img/new/slides/043.webp" class="d-block w-100" alt="Exotic Fruits"/>
         </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-mdb-target="#carouselExampleControls" data-mdb-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-mdb-target="#carouselExampleControls" data-mdb-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
 
-    <button
-      class="carousel-control-prev"
-      type="button"
-      data-bs-target="#carouselExampleCaptions"
-      data-bs-slide="prev"
-    >
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button
-      class="carousel-control-next"
-      type="button"
-      data-bs-target="#carouselExampleCaptions"
-      data-bs-slide="next"
-    >
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-<br>
-
-<div class="">
-  <div class="container">
-    <!--first section-->
-    <div class="row align-items-center how-it-works d-flex">
-      <div class="col-2 text-center bottom d-inline-flex justify-content-center align-items-center">
-        <div class="circle font-weight-bold">1</div>
-      </div>
-      <div class="col-6">
-        <h5>Select a service and a provider</h5>
-        <p>you got reviews , you got all the infos , <br>
-          and true image of the spot </p>
-      </div>
-    </div>
-    <!--path between 1-2-->
-    <div class="row timeline">
-      <div class="col-2">
-        <div class="corner top-right"></div>
-      </div>
-      <div class="col-8">
-        <hr/>
-      </div>
-      <div class="col-2">
-        <div class="corner left-bottom"></div>
-      </div>
-    </div>
-    <!--second section-->
-    <div class="row align-items-center justify-content-end how-it-works d-flex">
-      <div class="col-6 text-right">
-        <h5>Select a Date and a Time</h5>
-        <p>It has never been easier to get an appointment , <br>no calls , no queues, only a safe spot</p>
-      </div>
-      <div class="col-2 text-center full d-inline-flex justify-content-center align-items-center">
-        <div class="circle font-weight-bold">2</div>
-      </div>
-    </div>
-    <!--path between 2-3-->
-    <div class="row timeline">
-      <div class="col-2">
-        <div class="corner right-bottom"></div>
-      </div>
-      <div class="col-8">
-        <hr/>
-      </div>
-      <div class="col-2">
-        <div class="corner top-left"></div>
-      </div>
-    </div>
-    <!--third section-->
-    <div class="row align-items-center how-it-works d-flex">
-      <div class="col-2 text-center top d-inline-flex justify-content-center align-items-center">
-        <div class="circle font-weight-bold">3</div>
-      </div>
-      <div class="col-6">
-        <h5>Book it</h5>
-        <p>get yourself a spot,Get your confirmation and have it added to your Calander</p>
+    
+    <div class="">
+      <div class="container">
+        <!--first section-->
+        <div class="row align-items-center how-it-works d-flex">
+          <div
+            class="col-2 text-center bottom d-inline-flex justify-content-center align-items-center"
+          >
+            <div class="circle font-weight-bold">1</div>
+          </div>
+          <div class="col-6">
+            <h5>Select a service and a provider</h5>
+            <p>
+              you got reviews , you got all the infos , <br />
+              and true image of the spot
+            </p>
+          </div>
+        </div>
+        <!--path between 1-2-->
+        <div class="row timeline">
+          <div class="col-2">
+            <div class="corner top-right"></div>
+          </div>
+          <div class="col-8">
+            <hr />
+          </div>
+          <div class="col-2">
+            <div class="corner left-bottom"></div>
+          </div>
+        </div>
+        <!--second section-->
+        <div
+          class="row align-items-center justify-content-end how-it-works d-flex"
+        >
+          <div class="col-6 text-right">
+            <h5>Select a Date and a Time</h5>
+            <p>
+              It has never been easier to get an appointment , <br />no calls ,
+              no queues, only a safe spot
+            </p>
+          </div>
+          <div
+            class="col-2 text-center full d-inline-flex justify-content-center align-items-center"
+          >
+            <div class="circle font-weight-bold">2</div>
+          </div>
+        </div>
+        <!--path between 2-3-->
+        <div class="row timeline">
+          <div class="col-2">
+            <div class="corner right-bottom"></div>
+          </div>
+          <div class="col-8">
+            <hr />
+          </div>
+          <div class="col-2">
+            <div class="corner top-left"></div>
+          </div>
+        </div>
+        <!--third section-->
+        <div class="row align-items-center how-it-works d-flex">
+          <div
+            class="col-2 text-center top d-inline-flex justify-content-center align-items-center"
+          >
+            <div class="circle font-weight-bold">3</div>
+          </div>
+          <div class="col-6">
+            <h5>Book it</h5>
+            <p>
+              get yourself a spot,Get your confirmation and have it added to
+              your Calander
+            </p>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-  <!-- ---------------Features-------------- -->
-  <div class="features-clean">
-    <div class="container">
+    <!-- ---------------Features-------------- -->
+    <div class="features-clean">
+      <div class="container">
         <div class="intro">
-            <h2 class="text-center">Features</h2>
-            <p class="text-center">Take control of your time, one appointment at a time </p>
+          <h2 class="text-center">Features</h2>
+          <p class="text-center">
+            Take control of your time, one appointment at a time
+          </p>
         </div>
         <div class="row features">
-            <div class="col-sm-6 col-lg-4 item"><i class="fa fa-map-marker icon"></i>
-                <h3 class="name">Works everywhere</h3>
-                <p class="description">Empowering you with convenience and flexibility—our site brings appointments to your fingertips, regardless of location.</p>
-            </div>
-            <div class="col-sm-6 col-lg-4 item"><i class="fa fa-clock-o icon"></i>
-                <h3 class="name">Stress Free</h3>
-                <p class="description">Experience the true essence of time liberation. Our comprehensive appointment solutions grant you the privilege to take charge of your schedule, providing unrivaled accessibility, day or night, 24/7.</p>
-            </div>
-            <div class="col-sm-6 col-lg-4 item"><i class="fa fa-list-alt icon"></i>
-                <h3 class="name">Don't be decieved</h3>
-                <p class="description">We understand the importance of user feedback. Benefit from our app's integrated reviews to enhance your experience.</p>
-            </div>
-            <div class="col-sm-6 col-lg-4 item"><i class="fa fa-leaf icon"></i>
-                <h3 class="name">Organised</h3>
-                <p class="description">Leave the complexities of scheduling behind and embrace a seamless, user-friendly solution tailored to your needs.</p>
-            </div>
-            <div class="col-sm-6 col-lg-4 item"><i class="fa fa-plane icon"></i>
-                <h3 class="name">Fast</h3>
-                <p class="description">No more wasting time in long queues or driving to find no available spots. We've got you covered</p>
-            </div>
-            <div class="col-sm-6 col-lg-4 item"><i class="fa fa-phone icon"></i>
-                <h3 class="name">Mobile-first</h3>
-                <p class="description">Say goodbye to the frustration of calling and waiting. With our app, booking appointments is effortless and convenient.</p>
-            </div>
+          <div class="col-sm-6 col-lg-4 item">
+            <i class="fa fa-map-marker icon"></i>
+            <h3 class="name">Works everywhere</h3>
+            <p class="description">
+              Empowering you with convenience and flexibility—our site brings
+              appointments to your fingertips, regardless of location.
+            </p>
+          </div>
+          <div class="col-sm-6 col-lg-4 item">
+            <i class="fa fa-clock-o icon"></i>
+            <h3 class="name">Stress Free</h3>
+            <p class="description">
+              Experience the true essence of time liberation. Our comprehensive
+              appointment solutions grant you the privilege to take charge of
+              your schedule, providing unrivaled accessibility, day or night,
+              24/7.
+            </p>
+          </div>
+          <div class="col-sm-6 col-lg-4 item">
+            <i class="fa fa-list-alt icon"></i>
+            <h3 class="name">Don't be decieved</h3>
+            <p class="description">
+              We understand the importance of user feedback. Benefit from our
+              app's integrated reviews to enhance your experience.
+            </p>
+          </div>
+          <div class="col-sm-6 col-lg-4 item">
+            <i class="fa fa-leaf icon"></i>
+            <h3 class="name">Organised</h3>
+            <p class="description">
+              Leave the complexities of scheduling behind and embrace a
+              seamless, user-friendly solution tailored to your needs.
+            </p>
+          </div>
+          <div class="col-sm-6 col-lg-4 item">
+            <i class="fa fa-plane icon"></i>
+            <h3 class="name">Fast</h3>
+            <p class="description">
+              No more wasting time in long queues or driving to find no
+              available spots. We've got you covered
+            </p>
+          </div>
+          <div class="col-sm-6 col-lg-4 item">
+            <i class="fa fa-phone icon"></i>
+            <h3 class="name">Mobile-first</h3>
+            <p class="description">
+              Say goodbye to the frustration of calling and waiting. With our
+              app, booking appointments is effortless and convenient.
+            </p>
+          </div>
         </div>
-    </div>
-    <!-- --------------------- -->
-    <div class="card w text-white " >
-      <img src="../static/assets/index_2.jpg" style="height: 200px;" class="card-img " alt="...">
-      <div class="card-img-overlay">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <p class="card-text">Last updated 3 mins ago</p>
       </div>
-    </div>
-    <div class="container d-flex justify-content-evenly my-2 ">
-      <div class="d-flex">
-          <img src="#" alt="Icon Step 1" />
-          <div>
-          <h2>Step 1</h2>
-          <p>Select a service and a provider</p>
+      <!-- --------------------- -->
+      <div class="card w text-white">
+        <img
+          src="../static/assets/index_2.jpg"
+          style="height: 300px"
+          class="card-img"
+          alt="..."
+        />
+        <div class="card-img-overlay">
+          <h5 class="card-title">Card title</h5>
+          <div class="card-text-container">
+            <p class="card-text">
+              We make <span style="color: #04395e">Life</span> easier
+            </p>
+            <p class="card-text text-bottom">than ever for you</p>
+          </div>
+        </div>
       </div>
+      <div class="container d-flex justify-content-center my-5">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="d-flex">
+            <div class="step-container">
+              <i class="fas fa-building step-icon"></i>
+              <div>
+                <h3>Manage your business</h3>
+                <p>Track and manage your business plans anywhere</p>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex">
+            <div class="step-container">
+              <i class="fas fa-group step-icon"></i>
+              <div>
+                <h3>Client management</h3>
+                <p>
+                  Track upcoming and past appointments, notes and statistics
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex">
+            <div class="step-container">
+              <i class="fas fa-ad step-icon"></i>
+              <div>
+                <h3>Advertise</h3>
+                <p>
+                  Our search feature will allow clients to discover you when
+                  looking for a service
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="d-flex">
-          <img src="#" alt="Icon Step 1" />
-          <div>
-          <h2>Step 2</h2>
-          <p>Select a service and a provider</p>
-      </div>
-      </div>
-      <div class="d-flex">
-          <img src="#" alt="Icon Step 1" />
-          <div>
-          <h2>Step 3</h2>
-          <p>Select a service and a provider</p>
-      </div>
-      </div>
-    </div>
-    <div class="card w text-white " >
-      <img src="../static/assets/index_2.jpg" style="height: 200px;" class="card-img " alt="...">
-      <div class="card-img-overlay">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <p class="card-text">Last updated 3 mins ago</p>
+
+      <div class="card w text-white">
+        <img
+          src="../static/assets/index_2.jpg"
+          style="height: 300px"
+          class="card-img"
+          alt="..."
+        />
+        <div class="card-img-overlay">
+          <h5 class="card-title">Card title</h5>
+        </div>
       </div>
     </div>
 
-</body>
-<footer>
-        
-</footer>
-
+    <!-- MDB -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.js"
+    ></script>
+  </body>
 </html>
